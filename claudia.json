@@ -1,0 +1,11 @@
+{
+  "lambda": {
+    "role": "lamcalc-executor",
+    "name": "lamcalc",
+    "region": "us-east-1"
+  },
+  "api": {
+    "id": "dh9y4sfy1i",
+    "module": "main"
+  }
+}

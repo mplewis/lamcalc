@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "name": "lamcalc",
+  "description": "Math expression evaluator microservice",
+  "version": "0.0.0",
+  "files": [
+    "main.js"
+  ],
+  "scripts": {
+    "start": "AWS_PROFILE=claudia claudia create --name lamcalc --region us-east-1 --api-module main",
+    "deploy": "AWS_PROFILE=claudia claudia update"
+  },
+  "devDependencies": {
+    "claudia": "^2.0.0"
+  },
+  "dependencies": {
+    "claudia-api-builder": "^2.0.0",
+    "mathjs": "^3.16.3"
+  },
+  "main": "main.js",
+  "license": "MIT"
+}
